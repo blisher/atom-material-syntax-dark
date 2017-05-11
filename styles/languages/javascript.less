@@ -1,63 +1,84 @@
 .syntax--js {
-    .syntax--constant {
-        color: @color-to-delete;
-    }
+  .syntax--constant {
+    color: @base09;
+  }
 
-    .syntax--support {
-        &.syntax--variable {
-            &.syntax--property {
-                color: @color-to-delete;
-            }
-            &.syntax--property.syntax--dom {
-                color: @color-to-delete;
-            }
-        }
-    }
-
-    .syntax--entity {
-        &.syntax--name {
-            &.syntax--type {
-                color: @color-to-delete;
-            }
-        }
-    }
-
-    .syntax--variable {
-        &.syntax--property {
-            color: @color-to-delete;
-        }
-        &.syntax--other.syntax--object {
-            color: @color-to-delete;
-        }
-        &.syntax--other.syntax--object.syntax--property {
-            color: @color-to-delete;
-        }
-    }
-
-    .syntax--string.syntax--quoted.syntax--template {
-      .syntax--other.syntax--object.syntax--property {
-          color: @color-to-delete;
+  .syntax--support {
+    &.syntax--variable {
+      &.syntax--property {
+        color: @base;
+      }
+      &.syntax--property.syntax--dom {
+        color: @base;
       }
     }
+  }
 
-    .syntax--constant {
-        &.syntax--numeric {
-            color: @color-to-delete;
-        }
-
-        &.syntax--boolean {
-            color: @color-to-delete;
-        }
-    }
-
-    .syntax--punctuation.syntax--begin,
-    .syntax--punctuation.syntax--end,
-    .syntax--delimiter.syntax--object.syntax--comma,
-    .syntax--brace.syntax--curly {
+  .syntax--entity {
+    &.syntax--name {
+      &.syntax--type {
         color: @color-to-delete;
+      }
+    }
+  }
+
+  .syntax--variable {
+    &.syntax--property {
+      color: @base;
+    }
+    &.syntax--other.syntax--object {
+      color: @base;
+    }
+    &.syntax--other.syntax--object.syntax--property {
+      color: @base;
+    }
+  }
+
+  .syntax--string.syntax--quoted.syntax--template {
+    .syntax--other.syntax--object.syntax--property {
+      color: @base0B;
+    }
+  }
+
+  .syntax--constant {
+    &.syntax--numeric {
+      color: @base09;
     }
 
-    .syntax--export .syntax--variable.syntax--default {
-        color: @color-to-delete;
+    &.syntax--boolean {
+      color: @base09;
     }
+  }
+
+  .syntax--punctuation.syntax--begin,
+  .syntax--punctuation.syntax--end,
+  .syntax--delimiter.syntax--object.syntax--comma,
+  .syntax--brace.syntax--curly {
+    // color: @color-to-delete;
+  }
+
+  .syntax--export .syntax--variable.syntax--default {
+    color: red;
+  }
+
+  .syntax--keyword.syntax--control,
+  .syntax--storage.syntax--type,
+  .syntax--storage.syntax--modifier {
+    color: @base0E;
+  }
+
+  .syntax--string.syntax--unquoted {
+    color: @base0B;
+  }
+
+  .syntax--support {
+    color: @base;
+    &.syntax--dom {
+      color: @base;
+    }
+  }
+
+  .syntax--this {
+    color: @base0E;
+  }
 }
