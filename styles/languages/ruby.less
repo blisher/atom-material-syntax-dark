@@ -1,21 +1,41 @@
 .syntax--ruby {
-    .syntax--punctuation {
-        &.syntax--separator {
-            color: @color-to-delete;
-        }
+  .syntax--keyword,
+  .syntax--keyword.syntax--special-method {
+    color: @base0E;
+  }
+
+  .syntax--punctuation {
+    &.syntax--separator {
+      color: @base;
+    }
+  }
+
+  .syntax--variable {
+    &.syntax--block {
+      color: @base;
     }
 
-    .syntax--variable {
-        &.syntax--block {
-            color: @color-to-delete;
-        }
+    &.syntax--instance {
+      color: @base08;
 
-        &.syntax--instance {
-            color: @color-to-delete;
-
-            .syntax--punctuation {
-                color: currentColor;
-            }
-        }
+      .syntax--punctuation {
+        color: currentColor;
+      }
     }
+  }
+
+  .syntax--string {
+    .syntax--punctuation.syntax--section {
+      &.syntax--begin, &.syntax--end {
+        color: @base0F;
+      }
+    }
+    .syntax--embedded.syntax--ruby {
+      color: @base;
+    }
+  }
+
+  &.syntax--punctuation.syntax--constant.syntax--hashkey {
+    color: @base0F;
+  }
 }
