@@ -1,27 +1,27 @@
 .syntax--css {
     .syntax--support {
         &.syntax--constant {
-            color: @cyan;
+            color: @color-to-delete;
         }
 
         &.syntax--property-name {
-            color: @light-teal;
+            color: @color-to-delete;
         }
     }
 
     .syntax--keyword {
         &.syntax--unit {
-            color: @strong-orange;
+            color: @color-to-delete;
         }
     }
 
     .syntax--constant {
         &.syntax--numeric {
-            color: @light-orange;
+            color: @color-to-delete;
         }
 
         &.syntax--color {
-            color: @light-orange;
+            color: @color-to-delete;
 
             .syntax--punctuation {
                 color: currentColor;
@@ -31,20 +31,20 @@
 
     .syntax--entity {
         &.syntax--tag {
-            color: @light-gray;
+            color: @color-to-delete;
         }
 
         &.syntax--id {
-            color: @purple;
+            color: @color-to-delete;
         }
     }
 
     .syntax--punctuation {
         &.syntax--delimiter {
-            color: @cyan;
+            color: @color-to-delete;
 
             + .syntax--constant.syntax--numeric:not(.syntax--color) {
-                color: @strong-orange;
+                color: @color-to-delete;
             }
         }
     }

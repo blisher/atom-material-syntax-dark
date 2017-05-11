@@ -1,35 +1,35 @@
 .syntax--json {
     .syntax--meta {
         &.syntax--array.syntax--structure .syntax--string.syntax--quoted.syntax--double {
-            color: @green;
+            color: @color-to-delete;
 
             > * {
                 color: currentColor;
 
                 &.syntax--punctuation {
                     &.syntax--begin, &.syntax--end {
-                        color: @cyan;
+                        color: @color-to-delete;
                     }
                 }
             }
         }
 
         .syntax--punctuation.syntax--separator.syntax--key-value + .syntax--string.syntax--quoted {
-            color: @green;
+            color: @color-to-delete;
 
             * {
                 color: currentColor;
 
                 &.syntax--punctuation {
                     &.syntax--begin, &.syntax--end {
-                        color: @cyan;
+                        color: @color-to-delete;
                     }
                 }
             }
         }
 
         &.syntax--structure.syntax--dictionary .syntax--string.syntax--quoted {
-            color: @purple;
+            color: @color-to-delete;
 
             .syntax--punctuation.syntax--string {
                 color: currentColor;
