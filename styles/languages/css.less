@@ -1,51 +1,70 @@
 .syntax--css {
-    .syntax--support {
-        &.syntax--constant {
-            color: @color-to-delete;
-        }
-
-        &.syntax--property-name {
-            color: @color-to-delete;
-        }
+  .syntax--support {
+    &.syntax--constant {
+      color: @base0A;
     }
 
-    .syntax--keyword {
-        &.syntax--unit {
-            color: @color-to-delete;
-        }
+    &.syntax--property-name {
+      color: @base0B;
+    }
+  }
+
+  .syntax--keyword {
+    &.syntax--unit {
+      color: @base09;
+    }
+    &.syntax--important {
+      color: @base0E;
+    }
+    &.syntax--control {
+      color: @base0E;
+    }
+  }
+
+  .syntax--constant {
+    &.syntax--numeric {
+      color: @base0A;
     }
 
-    .syntax--constant {
-        &.syntax--numeric {
-            color: @color-to-delete;
-        }
+    &.syntax--color {
+      color: @base09;
 
-        &.syntax--color {
-            color: @color-to-delete;
+      .syntax--punctuation {
+        color: @base0F;
+      }
+    }
+  }
 
-            .syntax--punctuation {
-                color: currentColor;
-            }
-        }
+  .syntax--entity {
+    &.syntax--tag {
+      color: @base0F;
     }
 
-    .syntax--entity {
-        &.syntax--tag {
-            color: @color-to-delete;
-        }
-
-        &.syntax--id {
-            color: @color-to-delete;
-        }
+    &.syntax--id {
+      color: @base08;
     }
-
-    .syntax--punctuation {
-        &.syntax--delimiter {
-            color: @color-to-delete;
-
-            + .syntax--constant.syntax--numeric:not(.syntax--color) {
-                color: @color-to-delete;
-            }
-        }
+    &.syntax--pseudo-class {
+      color: @base0C;
     }
+  }
+
+  .syntax--punctuation {
+    // color: @base;
+    &.syntax--definition.syntax--keyword {
+      color: @base;
+      // + .syntax--constant.syntax--numeric:not(.syntax--color) {
+      //   color: @color-to-delete;
+      // }
+    }
+  }
+
+  .syntax--string {
+    &.syntax--begin, &.syntax--end {
+      color: @base0A;
+    }
+  }
+
+  .syntax--variable {
+    color: @base0D;
+  }
 }
