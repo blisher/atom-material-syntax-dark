@@ -39,7 +39,7 @@ atom-text-editor {
   .fold-marker:after,
   .gutter .line-number.folded,
   .gutter .line-number:after {
-    color: @color-to-delete;
+    color: @base06;
   }
 
   .invisible {
@@ -71,7 +71,7 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
 }
 
 .syntax--keyword {
-  color: @color-to-delete;
+  color: @base0E;
 
   &.syntax--control {
     color: @color-to-delete;
@@ -82,11 +82,11 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
   }
 
   &.syntax--operator {
-    color: @color-to-delete;
+    color: @base0E;
   }
 
   &.syntax--other.syntax--special-method {
-    color: @color-to-delete;
+    color: @base0D;
   }
 
   &.syntax--other.syntax--unit {
@@ -99,14 +99,14 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
 }
 
 .syntax--constant {
-  color: @color-to-delete;
+  color: @base09;
 
   &.syntax--character.syntax--escape {
     color: @color-to-delete;
   }
 
   &.syntax--numeric {
-    color: @color-to-delete;
+    color: @base09;
   }
 
   &.syntax--other.syntax--color {
@@ -114,46 +114,46 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
   }
 
   &.syntax--other.syntax--symbol {
-    color: @color-to-delete;
+    color: @base0B;
   }
 
   &.syntax--language.syntax--null {
-    color: @color-to-delete;
+    color: @base0E;
   }
 }
 
 .syntax--variable {
-  color: @color-to-delete;
+  color: @base;
 
   &.syntax--interpolation {
     color: darken(@color-to-delete, 10%);
   }
 
   &.syntax--parameter.syntax--function {
-    color: @color-to-delete;
+    color: @base;
   }
 
   &.syntax--language {
-    color: @color-to-delete;
+    color: @base;
   }
 
   &.syntax--variable {
     &.syntax--object {
-      color: @color-to-delete;
+      color: @base;
     }
   }
 }
 
 .syntax--invalid.syntax--illegal {
-  background-color: @color-to-delete;
-  color: @syntax-background-color;
+  background-color: @base08;
+  color: @base06;
 }
 
 .syntax--string {
-  color: @color-to-delete;
+  color: @base0A;
 
   &.syntax--regexp {
-    color: @color-to-delete;
+    color: @base0C;
 
     .syntax--source.syntax--ruby.syntax--embedded {
       color: @color-to-delete;
@@ -178,7 +178,7 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
       color: @syntax-text-color;
 
       &.syntax--begin, &.syntax--end {
-        color: @color-to-delete;
+        color: @base0E;
       }
     }
 
@@ -198,23 +198,23 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
     }
 
     &.syntax--entity {
-      color: @color-to-delete;
+      color: @base;
     }
   }
 
   &.syntax--section {
     &.syntax--array {
-      color: @color-to-delete;
+      color: @base;
     }
 
     &.syntax--embedded {
-      color: @color-to-delete;
+      color: @base;
     }
   }
 
   &.syntax--separator {
     &.syntax--key-value {
-      color: @color-to-delete;
+      color: @base0F;
     }
   }
 
@@ -225,14 +225,14 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
 
 .syntax--support {
   &.syntax--class {
-    color: @color-to-delete;
+    color: @base09;
   }
 
   &.syntax--function {
-    color: @color-to-delete;
+    color: @base0D;
 
     &.syntax--any-method {
-      color: @color-to-delete;
+      color: @base0D;
     }
   }
 
@@ -242,7 +242,7 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
 
   &.syntax--variable {
     &.syntax--dom {
-      color: @color-to-delete;
+      color: @base;
     }
   }
 }
@@ -250,124 +250,125 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
 .syntax--entity {
   &.syntax--name {
     &.syntax--function {
-      color: @color-to-delete;
+      color: @base0D;
     }
 
     &.syntax--type {
-      color: @color-to-delete;
+      color: @base;
     }
   }
 
   &.syntax--other {
     &.syntax--inherited-class {
-      color: @color-to-delete;
+      color: @base0F;
     }
 
     &.syntax--attribute-name {
       &.syntax--pseudo-element {
-        color: @color-to-delete;
+        color: @base0C;
       }
 
       &.syntax--attribute {
-        color: @color-to-delete;
+        color: @base0B;
       }
     }
   }
 
   &.syntax--name.syntax--class,
   &.syntax--name.syntax--type.syntax--class {
-    color: @color-to-delete;
+    color: @base09;
   }
 
   &.syntax--name.syntax--section {
-    color: @color-to-delete;
+    color: @base08;
   }
 
   &.syntax--name.syntax--tag {
-    color: @color-to-delete;
+    color: @base08;
   }
 
   &.syntax--other.syntax--attribute-name {
-    color: @color-to-delete;
+    color: @base09;
   }
 }
 
 .syntax--meta {
   &.syntax--class {
-    color: @color-to-delete;
+    color: @base09;
   }
 
   &.syntax--delimiter {
     &.syntax--period {
-      color: @color-to-delete;
+      color: @base;
     }
   }
 
   &.syntax--link {
-    color: @color-to-delete;
+    color: @base;
+    font-style: italic;
   }
 
   &.syntax--require {
-    color: @color-to-delete;
+    color: @base0E;
   }
 
   &.syntax--selector {
-    color: @color-to-delete;
+    color: @base09;
   }
 
   &.syntax--separator {
     background-color: @color-to-delete;
-    color: @syntax-text-color;
+    color: @base;
   }
 
   &.syntax--brace {
     &.syntax--round, &.syntax--square {
-      color: @color-to-delete;
+      color: @base;
     }
   }
 }
 
 .syntax--none {
-  color: @syntax-text-color;
+  color: @base;
 }
 
 .syntax--markup {
   &.syntax--bold {
-    color: @color-to-delete;
+    color: @base;
     font-weight: bold;
   }
 
   &.syntax--changed {
-    color: @color-to-delete;
+    color: @base;
   }
 
   &.syntax--deleted {
-    color: @color-to-delete;
+    color: @base;
   }
 
   &.syntax--italic {
-    color: @color-to-delete;
+    color: @base;
     font-style: italic;
   }
 
   &.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
-    color: @color-to-delete;
+    color: @base;
   }
 
   &.syntax--inserted {
-    color: @color-to-delete;
+    color: @base;
   }
 
   &.syntax--list {
-    color: @color-to-delete;
+    color: @base;
   }
 
   &.syntax--quote {
-    color: @color-to-delete;
+    color: @base0A;
   }
 
   &.syntax--raw.syntax--inline {
-    color: @color-to-delete;
+    color: @base;
   }
 }
 
@@ -375,7 +376,7 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
   -webkit-font-smoothing: auto;
 
   &.syntax--heading {
-    color: @color-to-delete;
+    color: @base;
   }
 }
 
